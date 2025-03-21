@@ -1,0 +1,121 @@
+footer {
+    background-image: url(../../assets/imges/3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 30px;
+    overflow: hidden;
+}
+footer::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 157px;
+    background-image: url(../../assets/imges/fottertop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0%;
+}
+footer .container {
+    padding-top: 200px;
+    position: relative;
+}
+footer .container .row {
+    gap: 5px 0;
+}
+footer .container .row .col .box {
+    padding: 10px;
+    min-width: 280px;
+}
+footer .container .row .col .box .head {
+    height: 50px;
+    margin-bottom: 10px;
+}
+footer .container .row .col .box .head h3 {
+    font-size: 25px;
+    color: #000a7c;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+footer .container .row .col .box .body {
+    padding: 0 5px;
+    color: #444;
+    font-weight: 500;
+    line-height: 2;
+    margin-left: 2px;
+}
+footer .container .row .col .box .body ul {
+    padding: 0;
+}
+footer .container .row .col .box .body input {
+    padding: 14px;
+    border: none;
+    background-color: #FFF;
+    box-shadow: 0 0 10px #dfdfdf;
+}
+footer .container .row .col .box .body button {
+    margin-top: 15px;
+    width: 100%;
+    background-color: #f17832;
+    color: #FFF;
+    padding: 15px;
+    border: none;
+    outline: none;
+}
+footer .container .row .col .box .body ul li{
+    cursor: pointer;
+    list-style: none;
+    text-transform: capitalize;
+}
+footer .container .row .col .box .body ul li a {
+    transition: .4s;
+    color: #444;
+}
+footer .container .row .col .box .body ul li a:hover {
+    color: #f17832;
+    margin-left: 10px;
+}
+footer .container .row .col .box .foot {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+footer .container .row .col .box .foot svg {
+    font-size: 30px;
+    background-color: #f17832;
+    color: #FFF;
+    padding: 10px;
+    border-radius: 10px;
+}
+footer .container .row .col .box .foot img {
+    margin-left: 10px;
+}
+footer .container .row .col .box .foot .call {
+    padding: 10px;
+}
+footer .container .row .col .box .foot .call h3 {
+    font-size: 16px;
+    color: #f17832;
+}
+footer .container .row .col .box .foot .call h2 {
+    font-size: 20px;
+    color: rgb(0, 0, 91);
+}
+footer .container .end {
+    margin-top: 20px;
+    padding: 15px;
+    border-top: 1px solid #000a7c6a;
+    text-align: center;
+}
+footer .container .end p {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #000a7c;
+}
+footer .container .end p span {
+    font-size: 20px;
+    color: #f17832;
+    font-weight: bolder;
+}

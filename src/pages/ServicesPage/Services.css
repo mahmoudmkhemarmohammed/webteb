@@ -1,0 +1,9 @@
+.serv-page {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px 120px;
+    flex-wrap: wrap;
+}
+.serv-page .card {
+    flex-grow: 1;
+}

@@ -1,0 +1,156 @@
+.working {
+    background-image: url(../../assets/imges/bg.jpg);
+}
+.working .container {
+    padding-top: 50px;
+}
+.working .container .heading {
+    padding: 20px;
+    text-align: center;
+}
+.working .container .heading h3 {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #f17732;
+}
+.working .container .heading h2 {
+    font-size: 40px;
+    font-weight: bolder;
+    text-transform: capitalize;
+    color: #0b0e6e;
+    margin-top: 20px;
+}
+.working .container .cards {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.working .container .cards .card {
+    padding: 20px;
+    width: 300px;
+    border: none;
+    outline: none;
+    background-color: #FFF;
+    box-shadow: 0 0 10px #e7e6e6;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    z-index: 11;
+}
+.working .container .cards .card:nth-child(2){
+    translate: 0 -40px;
+}
+.working .container .cards .card h2 {
+    -webkit-text-stroke: 2px #f17732;
+    color: transparent;
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 80px;
+    margin-bottom: 30px;
+    text-shadow: 0 10px 0 #ffe3d3;
+    text-align: center;
+    transition: .4s;
+}
+.working .container .cards .card:hover h2,
+.working .container .cards .active h2{
+    -webkit-text-stroke: 2px #fff;
+    text-shadow: 0 10px 0 #f38f5e;
+}
+.working .container .cards .card span {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    transition: .8s;
+}
+.working .container .cards .card:hover {
+    background-color: transparent;
+}
+.working .container .cards .card:hover span,
+.working .container .cards .card.active span{
+    box-shadow: 700px 0 20px #f17732 inset;
+    z-index: -1;
+}
+.working .container .cards .card h3 {
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #f17732;
+    padding: 15px 0;
+}
+.working .container .cards .card:hover h3 ,
+.working .container .cards .card.active h3{
+    color: #FFF;
+}
+.working .container .cards .card:hover p,
+.working .container .cards .card.active p {
+    color: #FFF;
+}
+.cssbuttons-io-button {
+    width: fit-content;
+    margin-top: 30px;
+    background: #b7bdd3;
+    color: white;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #b7bdd3;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+}
+.working .container .cards .card:hover .cssbuttons-io-button,
+.working .container .cards .card.active .cssbuttons-io-button {
+    background-color: #FFF;
+    color: #f17732;
+}
+.cssbuttons-io-button .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #b7bdd3;
+    right: 0.3em;
+    transition: all 0.3s;
+}
+.cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+}
+.cssbuttons-io-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: #b7bdd3;
+}
+.cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+}
+.cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+}
+@media(max-width: 991px) {
+    .working .container .cards .card {
+        flex-grow: 1;
+    }
+    .working .container .cards .card:nth-child(2){
+        translate: 0 0;
+    }
+}

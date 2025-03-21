@@ -1,0 +1,105 @@
+.services {
+    background-color: #f0f2f4;
+}
+.services .container {
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.services .container .text {
+    padding: 20px 10px;
+    width: 47%;
+}
+.services .container .text h3 {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #f17732;
+    padding: 3px;
+    border-radius: 3px;
+}
+.services .container .text h2 {
+    color: #0b0e6e;
+    font-size: 45px;
+    font-weight: bolder;
+    text-transform: capitalize;
+    max-width: 90%;
+    padding: 16px 0;
+}
+.services .container .text p {
+    font-size: 19px;
+    text-transform: capitalize;
+    max-width: 90%;
+}
+.services .container .text a {
+    margin-top: 30px;
+    border: none;
+    outline: none;
+    background-color: #f17732;
+    font-size: 17px;
+    padding: 17px 40px;
+}
+.services .container .box-card {
+    width: 50%;
+    padding: 55px 20px;
+    background-color: #e2e2eb;
+    flex-grow: 1;
+    border-radius: 20px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+.services .container .box-card .left,
+.services .container .box-card .right {
+    position: absolute;
+    left: 5%;
+    bottom: 1%;
+    z-index: 10000;
+    font-size: 25px;
+    font-weight: bold;
+    color:#FFF;
+    background: #0b0e6e;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .4s;
+}
+.services .container .box-card .right {
+    left: 20%;
+    z-index: 1000;
+}
+.services .container .box-card .right:hover,
+.services .container .box-card .left:hover{
+    scale: .8;
+    background-color: #f17832ce;
+}
+.services .container .box-card .box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: .3s;
+}
+@media(max-width: 991px) {
+    .services .container {
+        flex-direction: column;
+    }
+    .services .container .text,
+    .services .container .box-card {
+        width: 100%;
+        text-align: center;
+    }
+    .services .container .text h2 {
+        max-width: 100%;
+        font-size: 28px;
+    }
+    .services .container .text p {
+        font-size: 15px;
+        max-width: 100%;
+    }
+    .services .container .text a {
+        margin-top: 10px;
+        padding: 10px 15px;
+    }
+}

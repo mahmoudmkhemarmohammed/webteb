@@ -1,0 +1,186 @@
+.services-details {
+    padding: 70px 0;
+}
+.services-details .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.services-details .container .details{
+    flex-grow: 1;
+    width: 60%;
+    padding: 10px;
+}
+.services-details .container .liststickey {
+    flex-grow: 1;
+    padding: 10px;
+    width: 35%;
+}
+.services-details .container .details .img {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+}
+.services-details .container .details .img img {
+    width: 100%;
+    border-radius: inherit;
+}
+.services-details .container .title {
+    margin: 25px 0;
+}
+.services-details .container .title h2{
+    font-size: 40px;
+    color: #0b0e6e;
+    font-weight: bolder;
+    text-transform: capitalize;
+}
+.services-details .container .title p {
+    font-size: 17px;
+    text-transform: capitalize;
+    line-height: 1.7;
+    font-weight: 500;
+}
+.services-details .container .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+.services-details .container .info .ulchecked ul {
+    padding: 0;
+    margin: 0;
+}
+.services-details .container .info .ulchecked ul li{
+    margin-bottom: 10px;
+    list-style: none;
+    font-size: 18px;
+    color: #0b0e6e;
+    font-weight: 500;
+    margin-left: 50px;
+    position: relative;
+}
+.services-details .container .info .ulchecked ul li::before {
+    position: absolute;
+    content: "=";
+    left: -50px;
+    top: 0;
+    background-color: #0b0e6e;
+    color: #FFF;
+    padding: 1px 10px;
+    border-radius: 5px;
+}
+.services-details .container .info .bar{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 40%;
+}
+.services-details .container .info .bar span {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.services-details .container .info .bar .progress span {
+    display: inline-block;
+    height: 100%;
+    background-color: #0b0e6e;
+    width: 90%;
+    border-radius: 10px;
+}
+.services-details .container .info .bar div:nth-child(2) .progress span {
+    width: 80%;
+}
+.services-details .container .info .bar div:last-child .progress span {
+    width: 70%;
+}
+.services-details .container .liststickey {
+    position: sticky;
+    top: 100px;
+    height: fit-content;
+}
+.services-details .container .liststickey .buttons {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px 0;
+    border: 2px solid #565acf;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+.services-details .container .liststickey .buttons button {
+    margin: 0;
+    width: 100%;
+    background-color: #565acf;
+    height: 60px;
+}
+.services-details .container .liststickey .buttons button .icon {
+    height: 80%;
+}
+.services-details .container .liststickey .download {
+    padding: 40px;
+    border: 2px solid #565acf;
+    border-radius: 10px;
+}
+.services-details .container .liststickey .download h4 {
+    font-size: 20px;
+    font-weight: bolder;
+    text-transform: capitalize;
+    padding: 10px;
+    position: relative;
+    margin-bottom: 25px;
+}
+.services-details .container .liststickey .download h4::before {
+    position: absolute;
+    content: "";
+    width: 90%;
+    height: 100%;
+    border-bottom: 2px solid #565acf;
+    left: 50%;
+    translate: -50%;
+}
+.services-details .container .liststickey .download .files {
+    display: flex;
+    gap: 10px;
+    background-color: #565acf;
+    color: #FFF;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.services-details .container .liststickey .download .files .title {
+    margin: 0;
+}
+.services-details .container .liststickey .download .files .title h5 {
+    font-size: 15px;
+    font-weight: bolder;
+}
+.services-details .container .liststickey .download img {
+    width: 50px;
+}
+@media (max-width: 991px) {
+    .services-details .container {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .services-details .container .liststickey,
+    .services-details .container .details {
+        width: 100%;
+    }
+    .services-details .container .title h2 {
+        font-size: 25px;
+    }
+}
+@media(max-width: 767px) {
+    .services-details .container .info .bar {
+        width: 100%;
+    }
+    .services-details .container .liststickey .download .files .title h5 {
+        font-size: 12px;
+    }
+}

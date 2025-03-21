@@ -1,0 +1,237 @@
+header {
+    background-color: transparent;
+    height: 110px;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000000;
+}
+header .container-fluid {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+header .container-fluid .logo {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+header .container-fluid ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 40px 0 0;
+    gap: 25px;
+}
+header .container-fluid ul li {
+    list-style: none;
+}
+header .container-fluid ul li,
+header .container-fluid ul li a {
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #565acf;
+    cursor: pointer;
+    position: relative;
+}
+header .container-fluid ul li:hover,
+header .container-fluid ul li:hover a {
+    color: #f17832;
+}
+header .container-fluid ul li .list {
+    position: absolute;
+    left: 0;
+    z-index: 10000;
+}
+header .container-fluid ul li .list div {
+    margin-top: 50px;
+    background-color: #FFF;
+    border-radius: 10px;
+    width: 200px;
+    min-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    display: none;
+    animation: watch .2s linear;
+    box-shadow: 0 0 7px #565acf;
+}
+header .container-fluid ul li .list div a {
+    text-decoration: none;
+    color: #565acf;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    font-weight: bold;
+    transition: .4s;
+    font-size: 18px;
+}
+header .container-fluid ul li .list div a span {
+    font-size: 15px;
+    color: red;
+}
+header .container-fluid ul li div a:hover {
+    border-bottom: 1px solid #f17832;
+    padding-left: 20px;
+    color: #f17832;
+}
+header .container-fluid ul li:hover div {
+    display: flex;
+}
+header .container-fluid .boxed {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+}
+header .container-fluid .boxed .search {
+    font-size: 27px;
+    color: #565acf;
+    cursor: pointer;
+}
+header .container-fluid .boxed .call {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #565acf;
+    cursor: pointer;
+}
+header .container-fluid .boxed .call svg{
+    padding: 10px;
+    font-size: 20px;
+    background-color: #b7bdd3;
+    border-radius: 5px;
+}
+header .container-fluid .boxed a {
+    font-weight: 500;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    border: none;
+    outline: none;
+    background-color: #565acf;
+    border-radius: 5px;
+    color: #FFF;
+    padding: 10px 10px 10px 25px;
+    transition: .4s;
+}
+header .container-fluid .boxed a:hover {
+    background-color: #f17832;
+}
+header .container-fluid .boxed a svg {
+    background-color: #FFF;
+    color: #565acf;
+    padding: 10px 15px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+header .container-fluid .boxed .bars {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    display: none;
+    cursor: pointer;
+}
+header .container-fluid .boxed .bars svg {
+    color: #565acf;
+    font-size: 30px;
+}
+@media (max-width: 1423px) {
+    header .container-fluid .boxed .call {
+        display: none;
+    }
+}
+@media (max-width: 1135px) {
+    header .container-fluid .boxed a {
+        display: none;
+    }
+}
+@media(max-width: 895px) {
+    header .container-fluid .boxed .bars {
+        display: flex;
+    }
+    header .container-fluid ul {
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 100px);
+        top: 100px;
+        left: 50%;
+        translate: -50%;
+        flex-direction: column;
+        background-color: #FFF;
+        justify-content: flex-start;
+        animation: watch .6s linear;
+        display: none;
+        margin: 0;
+        padding: 20px;
+    }
+    header .container-fluid ul.show {
+        display: flex;
+    }
+    header .container-fluid ul li {
+        width: 100%;
+        background-color: aliceblue;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    header .container-fluid ul li .list {
+        left: 30%;
+    }
+    header .container-fluid ul li .list div {
+        margin-top: 10px;
+        background-color: #FFF;
+    }
+    header .container-fluid ul.show + .boxed .call,
+    header .container-fluid ul.show + .boxed a {
+        display: flex;
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        animation: watching 1s linear;
+    }
+    header .container-fluid ul.show + .boxed a {
+        bottom: 80px;
+    }
+}
+@media (max-width: 767px) {
+    header {
+        height: 100px;
+    }
+    header .container-fluid .logo img {
+        width: 140px;
+    }
+    header .container-fluid .boxed .search,
+    header .container-fluid .boxed .bars svg {
+        font-size: 24px;
+    }
+}
+@keyframes watch {
+    from {
+        height: 0;
+        opacity: .5;
+        filter: blur(10px);
+        scale: .4;
+    }
+}
+@keyframes watching {
+    0% {
+        left: -100%;
+    }
+    50% {
+        left: -80%;
+    }
+    100% {
+        left: 20px;
+    }
+}

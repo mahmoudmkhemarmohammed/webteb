@@ -1,0 +1,30 @@
+.faqs {
+    padding: 100px 0;
+}
+.faqs .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(45%,1fr));
+    gap: 50px;
+    padding: 10px;
+}
+.faqs .container .box-acc .accordion,
+.services-details .container .acc .accordion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.faqs .container .box-acc .accordion-item,
+.services-details .container .acc .accordion-item {
+    width: 100%;
+}
+.faqs .container .box-acc .accordion-button,
+.services-details .container .acc .accordion-button {
+    background-color: #f17832;
+    color: #FFF;
+}
+.faqs .container .box-acc .accordion-button.collapsed,
+.services-details .container .acc .accordion-button.collapsed {
+    background-color: #565acf;
+}

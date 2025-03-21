@@ -1,0 +1,59 @@
+.login-section {
+    margin: 70px 0;
+}
+.login-section .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-section .container .login-box {
+    width: 470px;
+    padding: 40px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px 0;
+    background-color: #FFF;
+    box-shadow: 0 10px 60px 0 #1f227826;
+}
+.login-section .container .login-box .inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px 0;
+    width: 100%;
+}
+.login-section .container .login-box .inputs input,
+.login-section .container .login-box .inputs a{
+    display: inline-block;
+    font-weight: 500;
+    color: #000;
+    padding: 17px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    width: 100%;
+    border-radius: 7px;
+    border: 1px solid #565acf59;
+    transition: .3s;
+}
+.login-section .container .login-box .inputs input:focus {
+    border: 1px solid #565acf;
+}
+.login-section .container .login-box .inputs a {
+    text-align: center;
+    background-color: #565acf;
+    color: #FFF;
+    border: none;
+}
+.login-section .container .login-box .inputs p {
+    font-size: 19px;
+    font-weight: 400;
+    margin: 0;
+}
+.login-section .container .login-box .inputs a:last-child {
+    background-color: #f17832;
+}
